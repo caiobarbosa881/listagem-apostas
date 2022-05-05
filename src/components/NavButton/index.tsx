@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { Container, MobileContainer } from './styles'
 import { useState } from 'react'
 
 export const NavButton: React.FC<any> = ({children}) => {
@@ -12,7 +12,7 @@ export const NavButton: React.FC<any> = ({children}) => {
 
     return (
     <>
-        {nav ? <Container id="button" onClick={buttonHandler}>{children}</Container> : <Container id="button" onClick={buttonHandler}>{children}</Container>   }
+        {nav ? <Container id="button" onClick={buttonHandler}>{children}</Container> : <MobileContainer id="button" onClick={buttonHandler}>{children}</MobileContainer>   }
     </>
   );
 }

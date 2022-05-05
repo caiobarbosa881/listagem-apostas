@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {Container} from './styles';
 
 export const Header: React.FC<any> = ({children}) => {
